@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Inside Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 25vw;
+            height: 71vh;
+            border: 2px solid gray;
+            background-color: aliceblue;
+            margin: 120px auto 0;
+            position: relative;
+        }
+
+        .box2 {
+            width: 20vw;
+            height: 60vh;
+            position: absolute;
+            background-color: rgb(184, 179, 173);
+            border: 2px solid rgb(169, 216, 206);
+            border-radius: 20px;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            padding: 10px;
+            overflow: absolute;
+        }
+
+        .box2 img {
+            width: 100%;
+            height: 40%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            color: #444;
+            font-family: Arial, sans-serif;
+            margin: 10px 0;
+        }
+
+        #dabba1,
+        #dabba2 {
+            display: inline-block;
+            background-color: beige;
+            border: 2px solid gray;
+            border-radius: 8px;
+            padding: 5px 10px;
+            margin: 5px 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #bab {
+            background-color: beige;
+            width: fit-content;
+            padding: 5px 15px;
+            height: 30px;
+            border: 2px solid gray;
+            border-radius: 20px;
+            margin: 10px auto 0;
+            text-align: center;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+
+        #bab:hover {
+            color: blue;
+        }
+
+        .bab{
+            background-color: calc();
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="box2">
+            <img src="https://images.pexels.com/photos/12742654/pexels-photo-12742654.jpeg" alt="Man on boat">
+
+            <!-- Tags right after image -->
+            <div style="margin-top: 8px; text-align: center;">
+                <div id="dabba1">Nature</div>
+                <div id="dabba2">Lake</div>
+            </div>
+
+            <h1>FluxSoham</h1>
+
+            <p> adipisicing elit. Inventore accusamus neque delectus? Maiores a ea iste, delectus ratione non vero laboriosam laborum quaerat.</p>
+
+            <div id="bab">READ MORE</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
